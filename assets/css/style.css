@@ -104,7 +104,6 @@ header {
     padding: 50px 0;
     background-color: var(--background-color);
     z-index: 1000;
-
 }
 
 header .nav_bar {
@@ -116,14 +115,14 @@ header .nav_bar {
 
 }
 
-header /* .nav_bar */ .nav_logo {
-    /* font-family: var(--font-family-logo); */
+header .nav_bar .nav_logo {
+    font-family: var(--font-family-logo);
     font-size: 24px;
     font-weight: 700;
     color: var(--primary-color);
 }
 
-header /* .nav_bar */ .nav_logo span {
+header .nav_bar .nav_logo span {
     color: var(--secondary-color);
 }
 
