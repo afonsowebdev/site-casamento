@@ -104,6 +104,7 @@ header {
     padding: 50px 0;
     background-color: var(--background-color);
     z-index: 1000;
+
 }
 
 header .nav_bar {
@@ -115,14 +116,14 @@ header .nav_bar {
 
 }
 
-header .nav_bar .nav_logo {
-    font-family: var(--font-family-logo);
+header /* .nav_bar */ .nav_logo {
+    /* font-family: var(--font-family-logo); */
     font-size: 24px;
     font-weight: 700;
     color: var(--primary-color);
 }
 
-header .nav_bar .nav_logo span {
+header /* .nav_bar */ .nav_logo span {
     color: var(--secondary-color);
 }
 
@@ -266,9 +267,48 @@ header .nav_bar .nav_toggle span {
     justify-content: center;
 }
 
-.hero .hero_content {
-    text-align: center;
+.hero .hero-content {
+    max-width: 800px;
+    padding: 20px;
 }
+
+.hero .hero-content .hero_title {
+    font-size: 46px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero .hero-content .hero_title span {
+    font-family: var(--font-family-logo);
+    color: var(--secondary-color);
+}
+
+.hero .hero-content .hero_text {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.hero .hero-content .hero-btns {
+    display: flex;
+    gap: 20px;
+}
+
+.hero .hero-content .hero-btns .btn {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.hero .hero-content .hero-btns .btn:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+
 
 
 .hero .hero-image {
@@ -279,7 +319,7 @@ header .nav_bar .nav_toggle span {
 .hero .hero-image img {
     width: 100%;
     height: auto;
-    max-width: 500px;
+    max-width: 450px;
     border-radius: 100%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
